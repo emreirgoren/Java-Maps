@@ -1,0 +1,210 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.emreirgoren.javamaps"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="24"
+9        android:targetSdkVersion="33" />
+10
+11    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+11-->C:\Users\canem\AndroidStudioProjects\JavaMaps\app\src\main\AndroidManifest.xml:5:5-79
+11-->C:\Users\canem\AndroidStudioProjects\JavaMaps\app\src\main\AndroidManifest.xml:5:22-76
+12    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+12-->C:\Users\canem\AndroidStudioProjects\JavaMaps\app\src\main\AndroidManifest.xml:6:5-81
+12-->C:\Users\canem\AndroidStudioProjects\JavaMaps\app\src\main\AndroidManifest.xml:6:22-78
+13
+14    <!-- Include required permissions for Google Maps API to run. -->
+15    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+15-->[com.google.android.gms:play-services-maps:18.2.0] C:\Users\canem\.gradle\caches\transforms-3\e5d9b860f3fb0e7b55b30333d6da73a7\transformed\play-services-maps-18.2.0\AndroidManifest.xml:23:5-79
+15-->[com.google.android.gms:play-services-maps:18.2.0] C:\Users\canem\.gradle\caches\transforms-3\e5d9b860f3fb0e7b55b30333d6da73a7\transformed\play-services-maps-18.2.0\AndroidManifest.xml:23:22-76
+16    <uses-permission android:name="android.permission.INTERNET" />
+16-->[com.google.android.gms:play-services-maps:18.2.0] C:\Users\canem\.gradle\caches\transforms-3\e5d9b860f3fb0e7b55b30333d6da73a7\transformed\play-services-maps-18.2.0\AndroidManifest.xml:24:5-67
+16-->[com.google.android.gms:play-services-maps:18.2.0] C:\Users\canem\.gradle\caches\transforms-3\e5d9b860f3fb0e7b55b30333d6da73a7\transformed\play-services-maps-18.2.0\AndroidManifest.xml:24:22-64
+17
+18    <uses-feature
+18-->[com.google.android.gms:play-services-maps:18.2.0] C:\Users\canem\.gradle\caches\transforms-3\e5d9b860f3fb0e7b55b30333d6da73a7\transformed\play-services-maps-18.2.0\AndroidManifest.xml:26:5-28:35
+19        android:glEsVersion="0x00020000"
+19-->[com.google.android.gms:play-services-maps:18.2.0] C:\Users\canem\.gradle\caches\transforms-3\e5d9b860f3fb0e7b55b30333d6da73a7\transformed\play-services-maps-18.2.0\AndroidManifest.xml:27:9-41
+20        android:required="true" />
+20-->[com.google.android.gms:play-services-maps:18.2.0] C:\Users\canem\.gradle\caches\transforms-3\e5d9b860f3fb0e7b55b30333d6da73a7\transformed\play-services-maps-18.2.0\AndroidManifest.xml:28:9-32
+21
+22    <queries>
+22-->[com.google.android.gms:play-services-maps:18.2.0] C:\Users\canem\.gradle\caches\transforms-3\e5d9b860f3fb0e7b55b30333d6da73a7\transformed\play-services-maps-18.2.0\AndroidManifest.xml:30:5-34:15
+23
+24        <!-- Needs to be explicitly declared on Android R+ -->
+25        <package android:name="com.google.android.apps.maps" />
+25-->[com.google.android.gms:play-services-maps:18.2.0] C:\Users\canem\.gradle\caches\transforms-3\e5d9b860f3fb0e7b55b30333d6da73a7\transformed\play-services-maps-18.2.0\AndroidManifest.xml:33:9-64
+25-->[com.google.android.gms:play-services-maps:18.2.0] C:\Users\canem\.gradle\caches\transforms-3\e5d9b860f3fb0e7b55b30333d6da73a7\transformed\play-services-maps-18.2.0\AndroidManifest.xml:33:18-61
+26    </queries>
+27
+28    <permission
+28-->[androidx.core:core:1.9.0] C:\Users\canem\.gradle\caches\transforms-3\6aec6292a5b89f6bfb044d8a994f27c1\transformed\core-1.9.0\AndroidManifest.xml:22:5-24:47
+29        android:name="com.emreirgoren.javamaps.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+29-->[androidx.core:core:1.9.0] C:\Users\canem\.gradle\caches\transforms-3\6aec6292a5b89f6bfb044d8a994f27c1\transformed\core-1.9.0\AndroidManifest.xml:23:9-81
+30        android:protectionLevel="signature" />
+30-->[androidx.core:core:1.9.0] C:\Users\canem\.gradle\caches\transforms-3\6aec6292a5b89f6bfb044d8a994f27c1\transformed\core-1.9.0\AndroidManifest.xml:24:9-44
+31
+32    <uses-permission android:name="com.emreirgoren.javamaps.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+32-->[androidx.core:core:1.9.0] C:\Users\canem\.gradle\caches\transforms-3\6aec6292a5b89f6bfb044d8a994f27c1\transformed\core-1.9.0\AndroidManifest.xml:26:5-97
+32-->[androidx.core:core:1.9.0] C:\Users\canem\.gradle\caches\transforms-3\6aec6292a5b89f6bfb044d8a994f27c1\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
+33
+34    <application
+34-->C:\Users\canem\AndroidStudioProjects\JavaMaps\app\src\main\AndroidManifest.xml:8:5-39:19
+35        android:allowBackup="true"
+35-->C:\Users\canem\AndroidStudioProjects\JavaMaps\app\src\main\AndroidManifest.xml:9:9-35
+36        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+36-->[androidx.core:core:1.9.0] C:\Users\canem\.gradle\caches\transforms-3\6aec6292a5b89f6bfb044d8a994f27c1\transformed\core-1.9.0\AndroidManifest.xml:28:18-86
+37        android:dataExtractionRules="@xml/data_extraction_rules"
+37-->C:\Users\canem\AndroidStudioProjects\JavaMaps\app\src\main\AndroidManifest.xml:10:9-65
+38        android:debuggable="true"
+39        android:extractNativeLibs="false"
+40        android:fullBackupContent="@xml/backup_rules"
+40-->C:\Users\canem\AndroidStudioProjects\JavaMaps\app\src\main\AndroidManifest.xml:11:9-54
+41        android:icon="@mipmap/ic_launcher"
+41-->C:\Users\canem\AndroidStudioProjects\JavaMaps\app\src\main\AndroidManifest.xml:12:9-43
+42        android:label="@string/app_name"
+42-->C:\Users\canem\AndroidStudioProjects\JavaMaps\app\src\main\AndroidManifest.xml:13:9-41
+43        android:roundIcon="@mipmap/ic_launcher_round"
+43-->C:\Users\canem\AndroidStudioProjects\JavaMaps\app\src\main\AndroidManifest.xml:14:9-54
+44        android:supportsRtl="true"
+44-->C:\Users\canem\AndroidStudioProjects\JavaMaps\app\src\main\AndroidManifest.xml:15:9-35
+45        android:testOnly="true"
+46        android:theme="@style/Theme.JavaMaps" >
+46-->C:\Users\canem\AndroidStudioProjects\JavaMaps\app\src\main\AndroidManifest.xml:16:9-46
+47        <activity
+47-->C:\Users\canem\AndroidStudioProjects\JavaMaps\app\src\main\AndroidManifest.xml:18:9-27:20
+48            android:name="com.emreirgoren.javamaps.view.MainActivity"
+48-->C:\Users\canem\AndroidStudioProjects\JavaMaps\app\src\main\AndroidManifest.xml:19:13-46
+49            android:exported="true" >
+49-->C:\Users\canem\AndroidStudioProjects\JavaMaps\app\src\main\AndroidManifest.xml:20:13-36
+50            <intent-filter>
+50-->C:\Users\canem\AndroidStudioProjects\JavaMaps\app\src\main\AndroidManifest.xml:21:13-25:29
+51                <action android:name="android.intent.action.MAIN" />
+51-->C:\Users\canem\AndroidStudioProjects\JavaMaps\app\src\main\AndroidManifest.xml:22:17-69
+51-->C:\Users\canem\AndroidStudioProjects\JavaMaps\app\src\main\AndroidManifest.xml:22:25-66
+52
+53                <category android:name="android.intent.category.LAUNCHER" />
+53-->C:\Users\canem\AndroidStudioProjects\JavaMaps\app\src\main\AndroidManifest.xml:24:17-77
+53-->C:\Users\canem\AndroidStudioProjects\JavaMaps\app\src\main\AndroidManifest.xml:24:27-74
+54            </intent-filter>
+55        </activity>
+56
+57        <meta-data
+57-->C:\Users\canem\AndroidStudioProjects\JavaMaps\app\src\main\AndroidManifest.xml:29:9-31:71
+58            android:name="com.google.android.geo.API_KEY"
+58-->C:\Users\canem\AndroidStudioProjects\JavaMaps\app\src\main\AndroidManifest.xml:30:13-58
+59            android:value="AIzaSyBGN0N2V2d05XMfLdom0lGbwZFhoHIGHVk" />
+59-->C:\Users\canem\AndroidStudioProjects\JavaMaps\app\src\main\AndroidManifest.xml:31:13-68
+60
+61        <activity
+61-->C:\Users\canem\AndroidStudioProjects\JavaMaps\app\src\main\AndroidManifest.xml:33:9-38:20
+62            android:name="com.emreirgoren.javamaps.view.MapsActivity"
+62-->C:\Users\canem\AndroidStudioProjects\JavaMaps\app\src\main\AndroidManifest.xml:34:13-46
+63            android:exported="true"
+63-->C:\Users\canem\AndroidStudioProjects\JavaMaps\app\src\main\AndroidManifest.xml:35:13-36
+64            android:label="@string/title_activity_maps" >
+64-->C:\Users\canem\AndroidStudioProjects\JavaMaps\app\src\main\AndroidManifest.xml:36:13-56
+65        </activity>
+66        <!-- Needs to be explicitly declared on P+ -->
+67        <uses-library
+67-->[com.google.android.gms:play-services-maps:18.2.0] C:\Users\canem\.gradle\caches\transforms-3\e5d9b860f3fb0e7b55b30333d6da73a7\transformed\play-services-maps-18.2.0\AndroidManifest.xml:39:9-41:40
+68            android:name="org.apache.http.legacy"
+68-->[com.google.android.gms:play-services-maps:18.2.0] C:\Users\canem\.gradle\caches\transforms-3\e5d9b860f3fb0e7b55b30333d6da73a7\transformed\play-services-maps-18.2.0\AndroidManifest.xml:40:13-50
+69            android:required="false" />
+69-->[com.google.android.gms:play-services-maps:18.2.0] C:\Users\canem\.gradle\caches\transforms-3\e5d9b860f3fb0e7b55b30333d6da73a7\transformed\play-services-maps-18.2.0\AndroidManifest.xml:41:13-37
+70
+71        <service
+71-->[androidx.room:room-runtime:2.6.0] C:\Users\canem\.gradle\caches\transforms-3\cdfa82d9dfada1a773c3e17e72c3d235\transformed\room-runtime-2.6.0\AndroidManifest.xml:24:9-28:63
+72            android:name="androidx.room.MultiInstanceInvalidationService"
+72-->[androidx.room:room-runtime:2.6.0] C:\Users\canem\.gradle\caches\transforms-3\cdfa82d9dfada1a773c3e17e72c3d235\transformed\room-runtime-2.6.0\AndroidManifest.xml:25:13-74
+73            android:directBootAware="true"
+73-->[androidx.room:room-runtime:2.6.0] C:\Users\canem\.gradle\caches\transforms-3\cdfa82d9dfada1a773c3e17e72c3d235\transformed\room-runtime-2.6.0\AndroidManifest.xml:26:13-43
+74            android:exported="false" />
+74-->[androidx.room:room-runtime:2.6.0] C:\Users\canem\.gradle\caches\transforms-3\cdfa82d9dfada1a773c3e17e72c3d235\transformed\room-runtime-2.6.0\AndroidManifest.xml:27:13-37
+75
+76        <provider
+76-->[androidx.emoji2:emoji2:1.2.0] C:\Users\canem\.gradle\caches\transforms-3\9dcd0b9f6f795eca06b92fb5c1924731\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+77            android:name="androidx.startup.InitializationProvider"
+77-->[androidx.emoji2:emoji2:1.2.0] C:\Users\canem\.gradle\caches\transforms-3\9dcd0b9f6f795eca06b92fb5c1924731\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
+78            android:authorities="com.emreirgoren.javamaps.androidx-startup"
+78-->[androidx.emoji2:emoji2:1.2.0] C:\Users\canem\.gradle\caches\transforms-3\9dcd0b9f6f795eca06b92fb5c1924731\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
+79            android:exported="false" >
+79-->[androidx.emoji2:emoji2:1.2.0] C:\Users\canem\.gradle\caches\transforms-3\9dcd0b9f6f795eca06b92fb5c1924731\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
+80            <meta-data
+80-->[androidx.emoji2:emoji2:1.2.0] C:\Users\canem\.gradle\caches\transforms-3\9dcd0b9f6f795eca06b92fb5c1924731\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+81                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+81-->[androidx.emoji2:emoji2:1.2.0] C:\Users\canem\.gradle\caches\transforms-3\9dcd0b9f6f795eca06b92fb5c1924731\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
+82                android:value="androidx.startup" />
+82-->[androidx.emoji2:emoji2:1.2.0] C:\Users\canem\.gradle\caches\transforms-3\9dcd0b9f6f795eca06b92fb5c1924731\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
+83            <meta-data
+83-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\canem\.gradle\caches\transforms-3\4907d696005d5694d01e97da82c30448\transformed\lifecycle-process-2.6.1\AndroidManifest.xml:29:13-31:52
+84                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+84-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\canem\.gradle\caches\transforms-3\4907d696005d5694d01e97da82c30448\transformed\lifecycle-process-2.6.1\AndroidManifest.xml:30:17-78
+85                android:value="androidx.startup" />
+85-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\canem\.gradle\caches\transforms-3\4907d696005d5694d01e97da82c30448\transformed\lifecycle-process-2.6.1\AndroidManifest.xml:31:17-49
+86            <meta-data
+86-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\canem\.gradle\caches\transforms-3\d324e549f967a0a143c40f97e09bf975\transformed\profileinstaller-1.3.0\AndroidManifest.xml:29:13-31:52
+87                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+87-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\canem\.gradle\caches\transforms-3\d324e549f967a0a143c40f97e09bf975\transformed\profileinstaller-1.3.0\AndroidManifest.xml:30:17-85
+88                android:value="androidx.startup" />
+88-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\canem\.gradle\caches\transforms-3\d324e549f967a0a143c40f97e09bf975\transformed\profileinstaller-1.3.0\AndroidManifest.xml:31:17-49
+89        </provider>
+90
+91        <activity
+91-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\canem\.gradle\caches\transforms-3\47512a36cca42b56af64b782d2861732\transformed\play-services-base-18.0.1\AndroidManifest.xml:20:9-22:45
+92            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+92-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\canem\.gradle\caches\transforms-3\47512a36cca42b56af64b782d2861732\transformed\play-services-base-18.0.1\AndroidManifest.xml:20:19-85
+93            android:exported="false"
+93-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\canem\.gradle\caches\transforms-3\47512a36cca42b56af64b782d2861732\transformed\play-services-base-18.0.1\AndroidManifest.xml:22:19-43
+94            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+94-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\canem\.gradle\caches\transforms-3\47512a36cca42b56af64b782d2861732\transformed\play-services-base-18.0.1\AndroidManifest.xml:21:19-78
+95
+96        <meta-data
+96-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\canem\.gradle\caches\transforms-3\35969eb361d5e787a8421a8389b4bac4\transformed\play-services-basement-18.0.0\AndroidManifest.xml:21:9-23:69
+97            android:name="com.google.android.gms.version"
+97-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\canem\.gradle\caches\transforms-3\35969eb361d5e787a8421a8389b4bac4\transformed\play-services-basement-18.0.0\AndroidManifest.xml:22:13-58
+98            android:value="@integer/google_play_services_version" />
+98-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\canem\.gradle\caches\transforms-3\35969eb361d5e787a8421a8389b4bac4\transformed\play-services-basement-18.0.0\AndroidManifest.xml:23:13-66
+99
+100        <receiver
+100-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\canem\.gradle\caches\transforms-3\d324e549f967a0a143c40f97e09bf975\transformed\profileinstaller-1.3.0\AndroidManifest.xml:34:9-52:20
+101            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+101-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\canem\.gradle\caches\transforms-3\d324e549f967a0a143c40f97e09bf975\transformed\profileinstaller-1.3.0\AndroidManifest.xml:35:13-76
+102            android:directBootAware="false"
+102-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\canem\.gradle\caches\transforms-3\d324e549f967a0a143c40f97e09bf975\transformed\profileinstaller-1.3.0\AndroidManifest.xml:36:13-44
+103            android:enabled="true"
+103-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\canem\.gradle\caches\transforms-3\d324e549f967a0a143c40f97e09bf975\transformed\profileinstaller-1.3.0\AndroidManifest.xml:37:13-35
+104            android:exported="true"
+104-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\canem\.gradle\caches\transforms-3\d324e549f967a0a143c40f97e09bf975\transformed\profileinstaller-1.3.0\AndroidManifest.xml:38:13-36
+105            android:permission="android.permission.DUMP" >
+105-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\canem\.gradle\caches\transforms-3\d324e549f967a0a143c40f97e09bf975\transformed\profileinstaller-1.3.0\AndroidManifest.xml:39:13-57
+106            <intent-filter>
+106-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\canem\.gradle\caches\transforms-3\d324e549f967a0a143c40f97e09bf975\transformed\profileinstaller-1.3.0\AndroidManifest.xml:40:13-42:29
+107                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+107-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\canem\.gradle\caches\transforms-3\d324e549f967a0a143c40f97e09bf975\transformed\profileinstaller-1.3.0\AndroidManifest.xml:41:17-91
+107-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\canem\.gradle\caches\transforms-3\d324e549f967a0a143c40f97e09bf975\transformed\profileinstaller-1.3.0\AndroidManifest.xml:41:25-88
+108            </intent-filter>
+109            <intent-filter>
+109-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\canem\.gradle\caches\transforms-3\d324e549f967a0a143c40f97e09bf975\transformed\profileinstaller-1.3.0\AndroidManifest.xml:43:13-45:29
+110                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+110-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\canem\.gradle\caches\transforms-3\d324e549f967a0a143c40f97e09bf975\transformed\profileinstaller-1.3.0\AndroidManifest.xml:44:17-85
+110-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\canem\.gradle\caches\transforms-3\d324e549f967a0a143c40f97e09bf975\transformed\profileinstaller-1.3.0\AndroidManifest.xml:44:25-82
+111            </intent-filter>
+112            <intent-filter>
+112-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\canem\.gradle\caches\transforms-3\d324e549f967a0a143c40f97e09bf975\transformed\profileinstaller-1.3.0\AndroidManifest.xml:46:13-48:29
+113                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+113-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\canem\.gradle\caches\transforms-3\d324e549f967a0a143c40f97e09bf975\transformed\profileinstaller-1.3.0\AndroidManifest.xml:47:17-88
+113-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\canem\.gradle\caches\transforms-3\d324e549f967a0a143c40f97e09bf975\transformed\profileinstaller-1.3.0\AndroidManifest.xml:47:25-85
+114            </intent-filter>
+115            <intent-filter>
+115-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\canem\.gradle\caches\transforms-3\d324e549f967a0a143c40f97e09bf975\transformed\profileinstaller-1.3.0\AndroidManifest.xml:49:13-51:29
+116                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+116-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\canem\.gradle\caches\transforms-3\d324e549f967a0a143c40f97e09bf975\transformed\profileinstaller-1.3.0\AndroidManifest.xml:50:17-95
+116-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\canem\.gradle\caches\transforms-3\d324e549f967a0a143c40f97e09bf975\transformed\profileinstaller-1.3.0\AndroidManifest.xml:50:25-92
+117            </intent-filter>
+118        </receiver>
+119    </application>
+120
+121</manifest>
